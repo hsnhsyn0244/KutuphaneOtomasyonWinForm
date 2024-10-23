@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.NameInput = new System.Windows.Forms.TextBox();
+            this.userNameInput = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,14 +40,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // NameInput
+            // userNameInput
             // 
-            this.NameInput.Location = new System.Drawing.Point(113, 239);
-            this.NameInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.NameInput.Name = "NameInput";
-            this.NameInput.Size = new System.Drawing.Size(300, 26);
-            this.NameInput.TabIndex = 0;
-            this.NameInput.TextChanged += new System.EventHandler(this.NameInput_TextChanged);
+            this.userNameInput.Location = new System.Drawing.Point(146, 242);
+            this.userNameInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userNameInput.Name = "userNameInput";
+            this.userNameInput.Size = new System.Drawing.Size(267, 26);
+            this.userNameInput.TabIndex = 0;
+            this.userNameInput.TextChanged += new System.EventHandler(this.userNameInput_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -58,12 +58,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(13, 245);
+            this.label1.Location = new System.Drawing.Point(13, 248);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "AD :";
+            this.label1.Text = "Kullanıcı Adı :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -73,17 +73,17 @@
             this.label2.Location = new System.Drawing.Point(13, 322);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "ŞİFRE :";
+            this.label2.Text = "Şifre :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // passwordInput
             // 
-            this.passwordInput.Location = new System.Drawing.Point(113, 316);
+            this.passwordInput.Location = new System.Drawing.Point(146, 316);
             this.passwordInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passwordInput.Name = "passwordInput";
-            this.passwordInput.Size = new System.Drawing.Size(300, 26);
+            this.passwordInput.Size = new System.Drawing.Size(267, 26);
             this.passwordInput.TabIndex = 4;
             this.passwordInput.TextChanged += new System.EventHandler(this.passwordInput_TextChanged);
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.passwordInput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NameInput);
+            this.Controls.Add(this.userNameInput);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Info;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -132,6 +132,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,7 +141,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox NameInput;
+        private System.Windows.Forms.TextBox userNameInput;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

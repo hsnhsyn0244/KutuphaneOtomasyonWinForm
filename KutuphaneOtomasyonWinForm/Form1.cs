@@ -12,6 +12,8 @@ namespace KutuphaneOtomasyonWinForm
 {
     public partial class Form1 : Form
     {
+        // App.config dosyasındaki name keyi ile ulaşmış olduk veri tabanına
+        KutuphaneOtomasyonuEntities db = new KutuphaneOtomasyonuEntities();
         public Form1()
         {
             InitializeComponent();
@@ -28,27 +30,38 @@ namespace KutuphaneOtomasyonWinForm
         {
 
         }
-        private void NameInput_TextChanged(object sender, EventArgs e)
+        private void userNameInput_TextChanged(object sender, EventArgs e)
         {
 
-        }private void passwordInput_TextChanged(object sender, EventArgs e)
+        }
+        private void passwordInput_TextChanged(object sender, EventArgs e)
         {
 
         }
         private void GirisBtn_Click(object sender, EventArgs e)
         {
-            string gelenAd = NameInput.Text;
+            string gelenAd = userNameInput.Text;
             string gelenSifre = passwordInput.Text;
+            // Linq sorgusu
+            var personeller = db.Personeller.Where(_personel => _personel.personel_kullaniciAd.Equals(gelenAd) && _personel.personel_sifre.Equals(gelenSifre) ).FirstOrDefault();
 
-            if (gelenAd.Equals("hasan") && gelenSifre.Equals("1234"))
+            if (personeller == null)
             {
-                MessageBox.Show("Giris Basarılı");
+                 MessageBox.Show("Kullanıcı adı veya sifre hatali");
             }
             else
             {
-                MessageBox.Show("Kullanıcı adı veya sifre hatali");
+                MessageBox.Show("Başarılı");
+                IslemPaneli panel = new IslemPaneli();
+                panel.Show();
+                this.Hide();
             }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
+
+        
     }
 }
