@@ -70,11 +70,23 @@
     <Compile Include="Kullanicilar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="KullaniciListForm.cs">
+    <Compile Include="Kullanıcı\KullaniciEkleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KullaniciListForm.Designer.cs">
+    <Compile Include="Kullanıcı\KullaniciEkleForm.Designer.cs">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\KullaniciListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\KullaniciListForm.Designer.cs">
       <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\KullaniciSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\KullaniciSilForm.Designer.cs">
+      <DependentUpon>KullaniciSilForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -102,8 +114,14 @@
     <EmbeddedResource Include="IslemPaneli.resx">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KullaniciListForm.resx">
+    <EmbeddedResource Include="Kullanıcı\KullaniciEkleForm.resx">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\KullaniciListForm.resx">
       <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\KullaniciSilForm.resx">
+      <DependentUpon>KullaniciSilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,5 +168,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

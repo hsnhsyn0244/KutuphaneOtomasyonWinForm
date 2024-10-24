@@ -44,7 +44,7 @@
             this.kullanibiBilgiTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullanibiBilgiTitle.Location = new System.Drawing.Point(0, 0);
             this.kullanibiBilgiTitle.Name = "kullanibiBilgiTitle";
-            this.kullanibiBilgiTitle.Size = new System.Drawing.Size(886, 41);
+            this.kullanibiBilgiTitle.Size = new System.Drawing.Size(1114, 41);
             this.kullanibiBilgiTitle.TabIndex = 0;
             // 
             // panel2
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 450);
+            this.ClientSize = new System.Drawing.Size(1114, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.kullanibiBilgiTitle);
             this.IsMdiContainer = true;

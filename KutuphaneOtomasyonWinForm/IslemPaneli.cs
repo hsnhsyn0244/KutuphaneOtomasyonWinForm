@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KutuphaneOtomasyonWinForm.Kullanıcı;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,7 +47,9 @@ namespace KutuphaneOtomasyonWinForm
 
         private void kullaniciEkleBtn_Click(object sender, EventArgs e)
         {
-
+            KullaniciEkleForm ekleForm = new KullaniciEkleForm();
+            ekleForm.MdiParent = this;
+            ekleForm.Show();
         }
 
         private void kullaniciGüncelleBtn_Click(object sender, EventArgs e)
@@ -56,7 +59,9 @@ namespace KutuphaneOtomasyonWinForm
 
         private void kullaniciSilBtn_Click(object sender, EventArgs e)
         {
-
+            KullaniciSilForm kullaniciSil = new KullaniciSilForm();
+            kullaniciSil.MdiParent = this;
+            kullaniciSil.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -11,11 +11,12 @@
           </Key>
           <Property Name="kullanici_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="kullanici_ad" Type="nvarchar" MaxLength="50" />
-          <Property Name="kullaniici_soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanici_soyad" Type="nvarchar" MaxLength="50" />
           <Property Name="kullanici_tc" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_mail" Type="nvarchar" MaxLength="50" />
           <Property Name="kullanici_tel" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_ceza" Type="float" />
+          <Property Name="kullanici_cinsiyet" Type="nvarchar" MaxLength="1" />
         </EntityType>
         <EntityType Name="Personeller">
           <Key>
@@ -29,6 +30,7 @@
           <Property Name="personel_mail" Type="nvarchar" MaxLength="50" />
           <Property Name="personel_kullaniciAd" Type="nvarchar" MaxLength="50" />
           <Property Name="personel_sifre" Type="nvarchar" MaxLength="50" />
+          <Property Name="personel_cinsiyet" Type="nvarchar" MaxLength="1" />
         </EntityType>
         <EntityContainer Name="KutuphaneOtomasyonuModelStoreContainer">
           <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
@@ -50,6 +52,7 @@
           <Property Name="personel_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="personel_kullaniciAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="personel_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="personel_cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="KutuphaneOtomasyonuEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Personeller" EntityType="Self.Personeller" />
@@ -61,11 +64,12 @@
           </Key>
           <Property Name="kullanici_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="kullanici_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="kullaniici_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_tc" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_ceza" Type="Double" />
+          <Property Name="kullanici_cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -76,6 +80,7 @@
           <EntitySetMapping Name="Personeller">
             <EntityTypeMapping TypeName="KutuphaneOtomasyonuModel.Personeller">
               <MappingFragment StoreEntitySet="Personeller">
+                <ScalarProperty Name="personel_cinsiyet" ColumnName="personel_cinsiyet" />
                 <ScalarProperty Name="personel_id" ColumnName="personel_id" />
                 <ScalarProperty Name="personel_ad" ColumnName="personel_ad" />
                 <ScalarProperty Name="personel_soyad" ColumnName="personel_soyad" />
@@ -90,11 +95,12 @@
           <EntitySetMapping Name="Kullanicilar">
             <EntityTypeMapping TypeName="KutuphaneOtomasyonuModel.Kullanicilar">
               <MappingFragment StoreEntitySet="Kullanicilar">
+                <ScalarProperty Name="kullanici_cinsiyet" ColumnName="kullanici_cinsiyet" />
                 <ScalarProperty Name="kullanici_ceza" ColumnName="kullanici_ceza" />
                 <ScalarProperty Name="kullanici_tel" ColumnName="kullanici_tel" />
                 <ScalarProperty Name="kullanici_mail" ColumnName="kullanici_mail" />
                 <ScalarProperty Name="kullanici_tc" ColumnName="kullanici_tc" />
-                <ScalarProperty Name="kullaniici_soyad" ColumnName="kullaniici_soyad" />
+                <ScalarProperty Name="kullanici_soyad" ColumnName="kullanici_soyad" />
                 <ScalarProperty Name="kullanici_ad" ColumnName="kullanici_ad" />
                 <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
               </MappingFragment>

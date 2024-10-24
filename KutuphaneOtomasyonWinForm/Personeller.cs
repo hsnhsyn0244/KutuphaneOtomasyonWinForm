@@ -22,5 +22,6 @@ namespace KutuphaneOtomasyonWinForm
         public string personel_mail { get; set; }
         public string personel_kullaniciAd { get; set; }
         public string personel_sifre { get; set; }
+        public string personel_cinsiyet { get; set; }
     }
 }
