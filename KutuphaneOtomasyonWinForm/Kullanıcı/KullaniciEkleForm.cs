@@ -49,5 +49,10 @@ namespace KutuphaneOtomasyonWinForm.Kullanıcı
             db.SaveChanges();
             Listele();
         }
+
+        private void kullaniciEkleSoyad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

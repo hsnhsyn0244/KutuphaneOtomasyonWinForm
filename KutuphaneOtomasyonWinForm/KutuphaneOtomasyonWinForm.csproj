@@ -76,6 +76,12 @@
     <Compile Include="Kullanıcı\KullaniciEkleForm.Designer.cs">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanıcı\KullaniciGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\KullaniciGüncelle.Designer.cs">
+      <DependentUpon>KullaniciGüncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kullanıcı\KullaniciListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanıcı\KullaniciEkleForm.resx">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\KullaniciGüncelle.resx">
+      <DependentUpon>KullaniciGüncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanıcı\KullaniciListForm.resx">
       <DependentUpon>KullaniciListForm.cs</DependentUpon>

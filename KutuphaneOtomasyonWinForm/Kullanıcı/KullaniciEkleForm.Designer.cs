@@ -131,6 +131,7 @@
             this.kullaniciEkleSoyad.Name = "kullaniciEkleSoyad";
             this.kullaniciEkleSoyad.Size = new System.Drawing.Size(153, 20);
             this.kullaniciEkleSoyad.TabIndex = 8;
+            this.kullaniciEkleSoyad.TextChanged += new System.EventHandler(this.kullaniciEkleSoyad_TextChanged);
             // 
             // kullaniciEkleTc
             // 

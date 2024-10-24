@@ -54,7 +54,9 @@ namespace KutuphaneOtomasyonWinForm
 
         private void kullaniciGüncelleBtn_Click(object sender, EventArgs e)
         {
-
+            KullaniciGüncelle güncelleForm = new KullaniciGüncelle();
+            güncelleForm.MdiParent = this;
+            güncelleForm.Show();
         }
 
         private void kullaniciSilBtn_Click(object sender, EventArgs e)
