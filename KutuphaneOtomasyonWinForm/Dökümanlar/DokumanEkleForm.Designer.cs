@@ -52,7 +52,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(391, 88);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(702, 455);
+            this.dataGridView1.Size = new System.Drawing.Size(753, 455);
             this.dataGridView1.TabIndex = 34;
             // 
             // dokumanEkleKaydetBtn
@@ -205,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1127, 598);
+            this.ClientSize = new System.Drawing.Size(1168, 598);
             this.Controls.Add(this.dokumanEkleBasimTarihi);
             this.Controls.Add(this.dokumanEkleSayfaSayısı);
             this.Controls.Add(this.label10);
