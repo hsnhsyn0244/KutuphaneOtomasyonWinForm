@@ -1,4 +1,5 @@
-﻿using KutuphaneOtomasyonWinForm.Kullanıcı;
+﻿using KutuphaneOtomasyonWinForm.Dökümanlar;
+using KutuphaneOtomasyonWinForm.Kullanıcı;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,10 @@ namespace KutuphaneOtomasyonWinForm
             kullaniciEkleBtn.Visible = false;
             kullaniciGüncelleBtn.Visible = false;
             kullaniciSilBtn.Visible = false;
+
+            dokumanSilBtn.Visible = false;
+            DokumanGuncelleBtn.Visible = false;
+            dokumanEkleBtn.Visible = false; 
         }
         private void kullaniciListeleBtn_Click(object sender, EventArgs e)
         {
@@ -68,6 +73,43 @@ namespace KutuphaneOtomasyonWinForm
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void DokumanGuncelleBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dokumanEkleBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dokumanSilBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dokumanListBtn_Click(object sender, EventArgs e)
+        {
+            if (dokumanEkleBtn.Visible == false)
+            {
+                dokumanEkleBtn.Visible = true;
+                DokumanGuncelleBtn.Visible = true;
+                dokumanSilBtn.Visible = true;
+            }
+            else
+            {
+                dokumanEkleBtn.Visible = false;
+                DokumanGuncelleBtn.Visible = false;
+                dokumanSilBtn.Visible = false;
+            }
+          
+            DokumanListForm dokumanListForm = new DokumanListForm();
+            dokumanListForm.MdiParent = this;
+            dokumanListForm.Show();
+
 
         }
     }

@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="KutuphaneOtomasyonuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Dokumanlar">
+          <Key>
+            <PropertyRef Name="dokuman_id" />
+          </Key>
+          <Property Name="dokuman_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dokuman_ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="dokuman_yazar" Type="nvarchar" MaxLength="50" />
+          <Property Name="dokuman_yayinci" Type="nvarchar" MaxLength="50" />
+          <Property Name="dokuman_sayfaSayisi" Type="int" />
+          <Property Name="dokuman_basimTarihi" Type="datetime" />
+        </EntityType>
         <EntityType Name="Kullanicilar">
           <Key>
             <PropertyRef Name="kullanici_id" />
@@ -33,6 +44,7 @@
           <Property Name="personel_cinsiyet" Type="nvarchar" MaxLength="1" />
         </EntityType>
         <EntityContainer Name="KutuphaneOtomasyonuModelStoreContainer">
+          <EntitySet Name="Dokumanlar" EntityType="Self.Dokumanlar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Personeller" EntityType="Self.Personeller" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -57,6 +69,7 @@
         <EntityContainer Name="KutuphaneOtomasyonuEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Personeller" EntityType="Self.Personeller" />
           <EntitySet Name="Kullanicilar" EntityType="KutuphaneOtomasyonuModel.Kullanicilar" />
+          <EntitySet Name="Dokumanlar" EntityType="KutuphaneOtomasyonuModel.Dokumanlar" />
         </EntityContainer>
         <EntityType Name="Kullanicilar">
           <Key>
@@ -70,6 +83,17 @@
           <Property Name="kullanici_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_ceza" Type="Double" />
           <Property Name="kullanici_cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Dokumanlar">
+          <Key>
+            <PropertyRef Name="dokuman_id" />
+          </Key>
+          <Property Name="dokuman_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dokuman_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dokuman_yazar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dokuman_yayinci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dokuman_sayfaSayisi" Type="Int32" />
+          <Property Name="dokuman_basimTarihi" Type="DateTime" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -103,6 +127,18 @@
                 <ScalarProperty Name="kullanici_soyad" ColumnName="kullanici_soyad" />
                 <ScalarProperty Name="kullanici_ad" ColumnName="kullanici_ad" />
                 <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dokumanlar">
+            <EntityTypeMapping TypeName="KutuphaneOtomasyonuModel.Dokumanlar">
+              <MappingFragment StoreEntitySet="Dokumanlar">
+                <ScalarProperty Name="dokuman_basimTarihi" ColumnName="dokuman_basimTarihi" />
+                <ScalarProperty Name="dokuman_sayfaSayisi" ColumnName="dokuman_sayfaSayisi" />
+                <ScalarProperty Name="dokuman_yayinci" ColumnName="dokuman_yayinci" />
+                <ScalarProperty Name="dokuman_yazar" ColumnName="dokuman_yazar" />
+                <ScalarProperty Name="dokuman_ad" ColumnName="dokuman_ad" />
+                <ScalarProperty Name="dokuman_id" ColumnName="dokuman_id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

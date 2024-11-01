@@ -50,9 +50,9 @@
             // 
             // kullaniciGüncelleBtn
             // 
-            this.kullaniciGüncelleBtn.Location = new System.Drawing.Point(142, 354);
+            this.kullaniciGüncelleBtn.Location = new System.Drawing.Point(137, 354);
             this.kullaniciGüncelleBtn.Name = "kullaniciGüncelleBtn";
-            this.kullaniciGüncelleBtn.Size = new System.Drawing.Size(128, 26);
+            this.kullaniciGüncelleBtn.Size = new System.Drawing.Size(133, 32);
             this.kullaniciGüncelleBtn.TabIndex = 32;
             this.kullaniciGüncelleBtn.Text = "GÜNCELLE";
             this.kullaniciGüncelleBtn.UseVisualStyleBackColor = true;
@@ -61,6 +61,7 @@
             // kullaniciGüncelleCinK
             // 
             this.kullaniciGüncelleCinK.AutoSize = true;
+            this.kullaniciGüncelleCinK.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.kullaniciGüncelleCinK.Location = new System.Drawing.Point(191, 132);
             this.kullaniciGüncelleCinK.Name = "kullaniciGüncelleCinK";
             this.kullaniciGüncelleCinK.Size = new System.Drawing.Size(32, 17);
@@ -72,6 +73,7 @@
             // kullaniciGüncelleCinE
             // 
             this.kullaniciGüncelleCinE.AutoSize = true;
+            this.kullaniciGüncelleCinE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.kullaniciGüncelleCinE.Location = new System.Drawing.Point(117, 132);
             this.kullaniciGüncelleCinE.Name = "kullaniciGüncelleCinE";
             this.kullaniciGüncelleCinE.Size = new System.Drawing.Size(32, 17);
@@ -126,6 +128,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(11, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 17);
@@ -136,6 +139,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(40, 307);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 17);
@@ -146,6 +150,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(45, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 17);
@@ -156,6 +161,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(51, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 17);
@@ -166,6 +172,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(60, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 17);
@@ -176,6 +183,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(27, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 17);
@@ -186,6 +194,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(51, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 17);
@@ -195,9 +204,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(299, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(292, 45);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(725, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(753, 543);
             this.dataGridView1.TabIndex = 33;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -205,7 +214,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
+            this.ClientSize = new System.Drawing.Size(1057, 600);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.kullaniciGüncelleBtn);
             this.Controls.Add(this.kullaniciGüncelleCinK);

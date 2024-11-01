@@ -35,6 +35,12 @@
             this.kullaniciSilBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.kullaniciListeleBtn = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.DokumanGuncelleBtn = new System.Windows.Forms.Button();
+            this.dokumanEkleBtn = new System.Windows.Forms.Button();
+            this.dokumanSilBtn = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dokumanListBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +55,14 @@
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.DokumanGuncelleBtn);
+            this.panel2.Controls.Add(this.dokumanEkleBtn);
+            this.panel2.Controls.Add(this.dokumanSilBtn);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.dokumanListBtn);
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.kullaniciGüncelleBtn);
             this.panel2.Controls.Add(this.kullaniciEkleBtn);
             this.panel2.Controls.Add(this.kullaniciSilBtn);
@@ -58,14 +71,16 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(120, 409);
+            this.panel2.Size = new System.Drawing.Size(135, 409);
             this.panel2.TabIndex = 1;
             // 
             // kullaniciGüncelleBtn
             // 
-            this.kullaniciGüncelleBtn.Location = new System.Drawing.Point(0, 179);
+            this.kullaniciGüncelleBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kullaniciGüncelleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.kullaniciGüncelleBtn.Location = new System.Drawing.Point(0, 141);
             this.kullaniciGüncelleBtn.Name = "kullaniciGüncelleBtn";
-            this.kullaniciGüncelleBtn.Size = new System.Drawing.Size(120, 47);
+            this.kullaniciGüncelleBtn.Size = new System.Drawing.Size(135, 47);
             this.kullaniciGüncelleBtn.TabIndex = 5;
             this.kullaniciGüncelleBtn.Text = "Kullanıcı Güncelle";
             this.kullaniciGüncelleBtn.UseVisualStyleBackColor = true;
@@ -73,9 +88,11 @@
             // 
             // kullaniciEkleBtn
             // 
-            this.kullaniciEkleBtn.Location = new System.Drawing.Point(0, 89);
+            this.kullaniciEkleBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kullaniciEkleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kullaniciEkleBtn.Location = new System.Drawing.Point(0, 94);
             this.kullaniciEkleBtn.Name = "kullaniciEkleBtn";
-            this.kullaniciEkleBtn.Size = new System.Drawing.Size(120, 47);
+            this.kullaniciEkleBtn.Size = new System.Drawing.Size(135, 47);
             this.kullaniciEkleBtn.TabIndex = 4;
             this.kullaniciEkleBtn.Text = "Kullanıcı Ekle";
             this.kullaniciEkleBtn.UseVisualStyleBackColor = true;
@@ -83,9 +100,10 @@
             // 
             // kullaniciSilBtn
             // 
-            this.kullaniciSilBtn.Location = new System.Drawing.Point(0, 270);
+            this.kullaniciSilBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kullaniciSilBtn.Location = new System.Drawing.Point(0, 47);
             this.kullaniciSilBtn.Name = "kullaniciSilBtn";
-            this.kullaniciSilBtn.Size = new System.Drawing.Size(120, 47);
+            this.kullaniciSilBtn.Size = new System.Drawing.Size(135, 47);
             this.kullaniciSilBtn.TabIndex = 3;
             this.kullaniciSilBtn.Text = "Kullanıcı Sil";
             this.kullaniciSilBtn.UseVisualStyleBackColor = true;
@@ -103,14 +121,86 @@
             // 
             // kullaniciListeleBtn
             // 
+            this.kullaniciListeleBtn.BackColor = System.Drawing.Color.White;
             this.kullaniciListeleBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kullaniciListeleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.kullaniciListeleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kullaniciListeleBtn.Location = new System.Drawing.Point(0, 0);
             this.kullaniciListeleBtn.Name = "kullaniciListeleBtn";
-            this.kullaniciListeleBtn.Size = new System.Drawing.Size(120, 47);
+            this.kullaniciListeleBtn.Size = new System.Drawing.Size(135, 47);
             this.kullaniciListeleBtn.TabIndex = 0;
             this.kullaniciListeleBtn.Text = "Kullaıcılar";
-            this.kullaniciListeleBtn.UseVisualStyleBackColor = true;
+            this.kullaniciListeleBtn.UseVisualStyleBackColor = false;
             this.kullaniciListeleBtn.Click += new System.EventHandler(this.kullaniciListeleBtn_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(-3, 283);
+            this.button5.MaximumSize = new System.Drawing.Size(130, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(123, 0);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Kullanici Ekle";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // DokumanGuncelleBtn
+            // 
+            this.DokumanGuncelleBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DokumanGuncelleBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.DokumanGuncelleBtn.Location = new System.Drawing.Point(0, 329);
+            this.DokumanGuncelleBtn.Name = "DokumanGuncelleBtn";
+            this.DokumanGuncelleBtn.Size = new System.Drawing.Size(135, 47);
+            this.DokumanGuncelleBtn.TabIndex = 11;
+            this.DokumanGuncelleBtn.Text = "Döküman Güncelle";
+            this.DokumanGuncelleBtn.UseVisualStyleBackColor = true;
+            this.DokumanGuncelleBtn.Click += new System.EventHandler(this.DokumanGuncelleBtn_Click);
+            // 
+            // dokumanEkleBtn
+            // 
+            this.dokumanEkleBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dokumanEkleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dokumanEkleBtn.Location = new System.Drawing.Point(0, 282);
+            this.dokumanEkleBtn.Name = "dokumanEkleBtn";
+            this.dokumanEkleBtn.Size = new System.Drawing.Size(135, 47);
+            this.dokumanEkleBtn.TabIndex = 10;
+            this.dokumanEkleBtn.Text = "Döküman Ekle";
+            this.dokumanEkleBtn.UseVisualStyleBackColor = true;
+            this.dokumanEkleBtn.Click += new System.EventHandler(this.dokumanEkleBtn_Click);
+            // 
+            // dokumanSilBtn
+            // 
+            this.dokumanSilBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dokumanSilBtn.Location = new System.Drawing.Point(0, 235);
+            this.dokumanSilBtn.Name = "dokumanSilBtn";
+            this.dokumanSilBtn.Size = new System.Drawing.Size(135, 47);
+            this.dokumanSilBtn.TabIndex = 9;
+            this.dokumanSilBtn.Text = "Döküman Sil";
+            this.dokumanSilBtn.UseVisualStyleBackColor = true;
+            this.dokumanSilBtn.Click += new System.EventHandler(this.dokumanSilBtn_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(-2, 193);
+            this.button6.MaximumSize = new System.Drawing.Size(130, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(123, 0);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Kullanici Ekle";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // dokumanListBtn
+            // 
+            this.dokumanListBtn.BackColor = System.Drawing.Color.White;
+            this.dokumanListBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dokumanListBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dokumanListBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dokumanListBtn.Location = new System.Drawing.Point(0, 188);
+            this.dokumanListBtn.Name = "dokumanListBtn";
+            this.dokumanListBtn.Size = new System.Drawing.Size(135, 47);
+            this.dokumanListBtn.TabIndex = 7;
+            this.dokumanListBtn.Text = "Dökümanlar";
+            this.dokumanListBtn.UseVisualStyleBackColor = false;
+            this.dokumanListBtn.Click += new System.EventHandler(this.dokumanListBtn_Click);
             // 
             // IslemPaneli
             // 
@@ -138,5 +228,11 @@
         private System.Windows.Forms.Button kullaniciEkleBtn;
         private System.Windows.Forms.Button kullaniciSilBtn;
         private System.Windows.Forms.Button kullaniciGüncelleBtn;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button DokumanGuncelleBtn;
+        private System.Windows.Forms.Button dokumanEkleBtn;
+        private System.Windows.Forms.Button dokumanSilBtn;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button dokumanListBtn;
     }
 }
