@@ -64,6 +64,12 @@
     <Compile Include="Dökümanlar\DokumanEkleForm.Designer.cs">
       <DependentUpon>DokumanEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dökümanlar\DokumanGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dökümanlar\DokumanGuncelleForm.Designer.cs">
+      <DependentUpon>DokumanGuncelleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dökümanlar\DokumanListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,8 +144,14 @@
     <EmbeddedResource Include="Dökümanlar\DokumanEkleForm.resx">
       <DependentUpon>DokumanEkleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dökümanlar\DokumanGuncelleForm.resx">
+      <DependentUpon>DokumanGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dökümanlar\DokumanListForm.resx">
       <DependentUpon>DokumanListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dökümanlar\DokumanSilForm.resx">
+      <DependentUpon>DokumanSilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

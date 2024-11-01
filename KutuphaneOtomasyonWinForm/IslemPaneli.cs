@@ -78,7 +78,9 @@ namespace KutuphaneOtomasyonWinForm
 
         private void DokumanGuncelleBtn_Click(object sender, EventArgs e)
         {
-
+            DokumanGuncelleForm dokumanGuncelle = new DokumanGuncelleForm();
+            dokumanGuncelle.MdiParent = this;
+            dokumanGuncelle.Show();
         }
 
         private void dokumanEkleBtn_Click(object sender, EventArgs e)

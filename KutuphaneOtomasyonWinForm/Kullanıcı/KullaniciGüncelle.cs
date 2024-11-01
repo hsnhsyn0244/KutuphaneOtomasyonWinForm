@@ -69,5 +69,10 @@ namespace KutuphaneOtomasyonWinForm.Kullanıcı
             }
 
         }
+
+        private void kullaniciGüncelleAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

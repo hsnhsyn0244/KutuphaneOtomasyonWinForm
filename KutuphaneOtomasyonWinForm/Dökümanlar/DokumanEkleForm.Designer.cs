@@ -50,14 +50,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(365, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(391, 88);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(718, 542);
+            this.dataGridView1.Size = new System.Drawing.Size(702, 455);
             this.dataGridView1.TabIndex = 34;
             // 
             // dokumanEkleKaydetBtn
             // 
-            this.dokumanEkleKaydetBtn.Location = new System.Drawing.Point(194, 371);
+            this.dokumanEkleKaydetBtn.Location = new System.Drawing.Point(204, 364);
             this.dokumanEkleKaydetBtn.Name = "dokumanEkleKaydetBtn";
             this.dokumanEkleKaydetBtn.Size = new System.Drawing.Size(143, 39);
             this.dokumanEkleKaydetBtn.TabIndex = 33;
@@ -67,21 +67,21 @@
             // 
             // dokumanEkleYazarAdi
             // 
-            this.dokumanEkleYazarAdi.Location = new System.Drawing.Point(137, 316);
+            this.dokumanEkleYazarAdi.Location = new System.Drawing.Point(147, 309);
             this.dokumanEkleYazarAdi.Name = "dokumanEkleYazarAdi";
             this.dokumanEkleYazarAdi.Size = new System.Drawing.Size(200, 20);
             this.dokumanEkleYazarAdi.TabIndex = 29;
             // 
             // dokumanEkleYayinEvi
             // 
-            this.dokumanEkleYayinEvi.Location = new System.Drawing.Point(137, 230);
+            this.dokumanEkleYayinEvi.Location = new System.Drawing.Point(147, 223);
             this.dokumanEkleYayinEvi.Name = "dokumanEkleYayinEvi";
             this.dokumanEkleYayinEvi.Size = new System.Drawing.Size(200, 20);
             this.dokumanEkleYayinEvi.TabIndex = 27;
             // 
             // dokumanEkleAd
             // 
-            this.dokumanEkleAd.Location = new System.Drawing.Point(137, 95);
+            this.dokumanEkleAd.Location = new System.Drawing.Point(147, 88);
             this.dokumanEkleAd.Name = "dokumanEkleAd";
             this.dokumanEkleAd.Size = new System.Drawing.Size(200, 20);
             this.dokumanEkleAd.TabIndex = 26;
@@ -92,7 +92,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(31, 319);
+            this.label4.Location = new System.Drawing.Point(41, 312);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 17);
             this.label4.TabIndex = 21;
@@ -103,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(80, 98);
+            this.label2.Location = new System.Drawing.Point(90, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 17);
             this.label2.TabIndex = 19;
@@ -114,7 +114,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(69, 143);
+            this.label1.Location = new System.Drawing.Point(79, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 18;
@@ -129,7 +129,7 @@
             "Dergi",
             "Masal",
             "Ansiklopedi"});
-            this.dokumanEkleTur.Location = new System.Drawing.Point(137, 139);
+            this.dokumanEkleTur.Location = new System.Drawing.Point(147, 132);
             this.dokumanEkleTur.Name = "dokumanEkleTur";
             this.dokumanEkleTur.Size = new System.Drawing.Size(200, 21);
             this.dokumanEkleTur.TabIndex = 35;
@@ -140,18 +140,19 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(12, 46);
+            this.label7.Location = new System.Drawing.Point(12, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(197, 25);
             this.label7.TabIndex = 36;
             this.label7.Text = "DÖKÜMAN - EKLE";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(14, 187);
+            this.label8.Location = new System.Drawing.Point(24, 180);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 17);
             this.label8.TabIndex = 37;
@@ -162,7 +163,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(31, 233);
+            this.label9.Location = new System.Drawing.Point(41, 226);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 17);
             this.label9.TabIndex = 39;
@@ -173,7 +174,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(8, 271);
+            this.label10.Location = new System.Drawing.Point(18, 264);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 17);
             this.label10.TabIndex = 40;
@@ -181,7 +182,12 @@
             // 
             // dokumanEkleSayfaSayısı
             // 
-            this.dokumanEkleSayfaSayısı.Location = new System.Drawing.Point(137, 184);
+            this.dokumanEkleSayfaSayısı.Location = new System.Drawing.Point(147, 177);
+            this.dokumanEkleSayfaSayısı.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
             this.dokumanEkleSayfaSayısı.Name = "dokumanEkleSayfaSayısı";
             this.dokumanEkleSayfaSayısı.Size = new System.Drawing.Size(200, 20);
             this.dokumanEkleSayfaSayısı.TabIndex = 42;
@@ -189,7 +195,7 @@
             // 
             // dokumanEkleBasimTarihi
             // 
-            this.dokumanEkleBasimTarihi.Location = new System.Drawing.Point(137, 271);
+            this.dokumanEkleBasimTarihi.Location = new System.Drawing.Point(147, 264);
             this.dokumanEkleBasimTarihi.Name = "dokumanEkleBasimTarihi";
             this.dokumanEkleBasimTarihi.Size = new System.Drawing.Size(200, 20);
             this.dokumanEkleBasimTarihi.TabIndex = 43;
@@ -199,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1104, 632);
+            this.ClientSize = new System.Drawing.Size(1127, 598);
             this.Controls.Add(this.dokumanEkleBasimTarihi);
             this.Controls.Add(this.dokumanEkleSayfaSayısı);
             this.Controls.Add(this.label10);

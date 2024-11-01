@@ -123,6 +123,7 @@
             this.kullaniciGüncelleAd.Name = "kullaniciGüncelleAd";
             this.kullaniciGüncelleAd.Size = new System.Drawing.Size(153, 20);
             this.kullaniciGüncelleAd.TabIndex = 24;
+            this.kullaniciGüncelleAd.TextChanged += new System.EventHandler(this.kullaniciGüncelleAd_TextChanged);
             // 
             // label7
             // 
