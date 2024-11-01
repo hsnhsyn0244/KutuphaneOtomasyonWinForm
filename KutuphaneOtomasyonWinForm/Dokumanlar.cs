@@ -20,5 +20,6 @@ namespace KutuphaneOtomasyonWinForm
         public string dokuman_yayinci { get; set; }
         public Nullable<int> dokuman_sayfaSayisi { get; set; }
         public Nullable<System.DateTime> dokuman_basimTarihi { get; set; }
+        public string dokuman_turu { get; set; }
     }
 }

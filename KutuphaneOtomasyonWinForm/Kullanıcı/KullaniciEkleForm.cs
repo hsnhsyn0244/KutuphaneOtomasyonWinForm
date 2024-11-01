@@ -59,5 +59,75 @@ namespace KutuphaneOtomasyonWinForm.Kullanıcı
         {
 
         }
+
+        private void kullaniciEkleAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleCinK_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleCinE_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleCeza_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleMail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleTel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kullaniciEkleTc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

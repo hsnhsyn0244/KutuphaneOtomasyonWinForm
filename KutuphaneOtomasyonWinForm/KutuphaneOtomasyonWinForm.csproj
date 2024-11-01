@@ -58,11 +58,23 @@
     <Compile Include="Dokumanlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Dökümanlar\DokumanEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dökümanlar\DokumanEkleForm.Designer.cs">
+      <DependentUpon>DokumanEkleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dökümanlar\DokumanListForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dökümanlar\DokumanListForm.Designer.cs">
       <DependentUpon>DokumanListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dökümanlar\DokumanSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dökümanlar\DokumanSilForm.Designer.cs">
+      <DependentUpon>DokumanSilForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -123,6 +135,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dökümanlar\DokumanEkleForm.resx">
+      <DependentUpon>DokumanEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dökümanlar\DokumanListForm.resx">
       <DependentUpon>DokumanListForm.cs</DependentUpon>
     </EmbeddedResource>

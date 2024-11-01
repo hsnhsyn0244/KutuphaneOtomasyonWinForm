@@ -83,12 +83,16 @@ namespace KutuphaneOtomasyonWinForm
 
         private void dokumanEkleBtn_Click(object sender, EventArgs e)
         {
-
+            DokumanEkleForm dokumanEkle = new DokumanEkleForm();
+            dokumanEkle.MdiParent = this;
+            dokumanEkle.Show(); 
         }
 
         private void dokumanSilBtn_Click(object sender, EventArgs e)
         {
-
+            DokumanSilForm dokumanSil = new DokumanSilForm();
+            dokumanSil.MdiParent = this;
+            dokumanSil.Show();
         }
 
         private void dokumanListBtn_Click(object sender, EventArgs e)

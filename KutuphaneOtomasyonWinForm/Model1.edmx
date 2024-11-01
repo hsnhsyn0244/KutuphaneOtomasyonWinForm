@@ -15,6 +15,7 @@
           <Property Name="dokuman_yayinci" Type="nvarchar" MaxLength="50" />
           <Property Name="dokuman_sayfaSayisi" Type="int" />
           <Property Name="dokuman_basimTarihi" Type="datetime" />
+          <Property Name="dokuman_turu" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Kullanicilar">
           <Key>
@@ -94,6 +95,7 @@
           <Property Name="dokuman_yayinci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="dokuman_sayfaSayisi" Type="Int32" />
           <Property Name="dokuman_basimTarihi" Type="DateTime" Precision="3" />
+          <Property Name="dokuman_turu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -133,6 +135,7 @@
           <EntitySetMapping Name="Dokumanlar">
             <EntityTypeMapping TypeName="KutuphaneOtomasyonuModel.Dokumanlar">
               <MappingFragment StoreEntitySet="Dokumanlar">
+                <ScalarProperty Name="dokuman_turu" ColumnName="dokuman_turu" />
                 <ScalarProperty Name="dokuman_basimTarihi" ColumnName="dokuman_basimTarihi" />
                 <ScalarProperty Name="dokuman_sayfaSayisi" ColumnName="dokuman_sayfaSayisi" />
                 <ScalarProperty Name="dokuman_yayinci" ColumnName="dokuman_yayinci" />
