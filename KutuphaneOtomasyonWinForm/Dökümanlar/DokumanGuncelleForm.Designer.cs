@@ -139,7 +139,7 @@
             this.dokumanGüncelletBtn.Name = "dokumanGüncelletBtn";
             this.dokumanGüncelletBtn.Size = new System.Drawing.Size(143, 39);
             this.dokumanGüncelletBtn.TabIndex = 50;
-            this.dokumanGüncelletBtn.Text = "KAYDET";
+            this.dokumanGüncelletBtn.Text = "GÜNCELLE";
             this.dokumanGüncelletBtn.UseVisualStyleBackColor = true;
             this.dokumanGüncelletBtn.Click += new System.EventHandler(this.dokumanGüncelletBtn_Click);
             // 
@@ -163,6 +163,7 @@
             this.dokumanGüncelleAd.Name = "dokumanGüncelleAd";
             this.dokumanGüncelleAd.Size = new System.Drawing.Size(200, 20);
             this.dokumanGüncelleAd.TabIndex = 47;
+            this.dokumanGüncelleAd.TextChanged += new System.EventHandler(this.dokumanGüncelleAd_TextChanged);
             // 
             // label4
             // 

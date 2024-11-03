@@ -57,12 +57,7 @@ namespace KutuphaneOtomasyonWinForm
             ekleForm.Show();
         }
 
-        private void kullaniciGüncelleBtn_Click(object sender, EventArgs e)
-        {
-            KullaniciGüncelle güncelleForm = new KullaniciGüncelle();
-            güncelleForm.MdiParent = this;
-            güncelleForm.Show();
-        }
+        
 
         private void kullaniciSilBtn_Click(object sender, EventArgs e)
         {
@@ -70,34 +65,39 @@ namespace KutuphaneOtomasyonWinForm
             kullaniciSil.MdiParent = this;
             kullaniciSil.Show();
         }
+        private void kullaniciGüncelleBtn_Click_1(object sender, EventArgs e)
+        {
+            KullaniciGüncelle güncelleForm = new KullaniciGüncelle();
+            güncelleForm.MdiParent = this;
+            güncelleForm.Show();
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
-        private void DokumanGuncelleBtn_Click(object sender, EventArgs e)
-        {
-            DokumanGuncelleForm dokumanGuncelle = new DokumanGuncelleForm();
-            dokumanGuncelle.MdiParent = this;
-            dokumanGuncelle.Show();
-        }
-
-        private void dokumanEkleBtn_Click(object sender, EventArgs e)
+        private void dokumanEkleBtn_Click_1(object sender, EventArgs e)
         {
             DokumanEkleForm dokumanEkle = new DokumanEkleForm();
             dokumanEkle.MdiParent = this;
             dokumanEkle.Show(); 
         }
-
-        private void dokumanSilBtn_Click(object sender, EventArgs e)
+        private void dokumanSilBtn_Click_1(object sender, EventArgs e)
         {
             DokumanSilForm dokumanSil = new DokumanSilForm();
             dokumanSil.MdiParent = this;
             dokumanSil.Show();
         }
+        private void DokumanGuncelleBtn_Click_1(object sender, EventArgs e)
+        {
+            DokumanGuncelleForm dokumanGuncelle = new DokumanGuncelleForm();
+            dokumanGuncelle.MdiParent = this;
+            dokumanGuncelle.Show();
 
-        private void dokumanListBtn_Click(object sender, EventArgs e)
+        }
+
+        
+        private void dokumanListBtn_Click_1(object sender, EventArgs e)
         {
             if (dokumanEkleBtn.Visible == false)
             {
@@ -115,8 +115,7 @@ namespace KutuphaneOtomasyonWinForm
             DokumanListForm dokumanListForm = new DokumanListForm();
             dokumanListForm.MdiParent = this;
             dokumanListForm.Show();
-
-
         }
+
     }
 }
