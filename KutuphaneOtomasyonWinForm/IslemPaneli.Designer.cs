@@ -41,6 +41,7 @@
             this.kullaniciSilBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.kullaniciListeleBtn = new System.Windows.Forms.Button();
+            this.oduncVermeBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +58,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.oduncVermeBtn);
             this.panel2.Controls.Add(this.DokumanGuncelleBtn);
             this.panel2.Controls.Add(this.dokumanEkleBtn);
             this.panel2.Controls.Add(this.dokumanSilBtn);
@@ -202,6 +204,20 @@
             this.kullaniciListeleBtn.UseVisualStyleBackColor = false;
             this.kullaniciListeleBtn.Click += new System.EventHandler(this.kullaniciListeleBtn_Click);
             // 
+            // oduncVermeBtn
+            // 
+            this.oduncVermeBtn.BackColor = System.Drawing.Color.White;
+            this.oduncVermeBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.oduncVermeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.oduncVermeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oduncVermeBtn.Location = new System.Drawing.Point(0, 500);
+            this.oduncVermeBtn.Name = "oduncVermeBtn";
+            this.oduncVermeBtn.Size = new System.Drawing.Size(135, 47);
+            this.oduncVermeBtn.TabIndex = 19;
+            this.oduncVermeBtn.Text = "Ödünç Verme";
+            this.oduncVermeBtn.UseVisualStyleBackColor = false;
+            this.oduncVermeBtn.Click += new System.EventHandler(this.oduncVermeBtn_Click);
+            // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,5 +250,6 @@
         private System.Windows.Forms.Button dokumanListBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button kullaniciGüncelleBtn;
+        private System.Windows.Forms.Button oduncVermeBtn;
     }
 }

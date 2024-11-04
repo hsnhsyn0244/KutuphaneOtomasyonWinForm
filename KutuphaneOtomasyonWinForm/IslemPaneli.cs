@@ -1,5 +1,7 @@
 ﻿using KutuphaneOtomasyonWinForm.Dökümanlar;
+using KutuphaneOtomasyonWinForm.Kayıt_İşlemi;
 using KutuphaneOtomasyonWinForm.Kullanıcı;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,16 +51,12 @@ namespace KutuphaneOtomasyonWinForm
             kullaniciListForm.MdiParent = this;
             kullaniciListForm.Show();
         }
-
         private void kullaniciEkleBtn_Click(object sender, EventArgs e)
         {
             KullaniciEkleForm ekleForm = new KullaniciEkleForm();
             ekleForm.MdiParent = this;
             ekleForm.Show();
         }
-
-        
-
         private void kullaniciSilBtn_Click(object sender, EventArgs e)
         {
             KullaniciSilForm kullaniciSil = new KullaniciSilForm();
@@ -71,7 +69,6 @@ namespace KutuphaneOtomasyonWinForm
             güncelleForm.MdiParent = this;
             güncelleForm.Show();
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -81,6 +78,7 @@ namespace KutuphaneOtomasyonWinForm
             DokumanEkleForm dokumanEkle = new DokumanEkleForm();
             dokumanEkle.MdiParent = this;
             dokumanEkle.Show(); 
+            
         }
         private void dokumanSilBtn_Click_1(object sender, EventArgs e)
         {
@@ -117,5 +115,11 @@ namespace KutuphaneOtomasyonWinForm
             dokumanListForm.Show();
         }
 
+        private void oduncVermeBtn_Click(object sender, EventArgs e)
+        {
+            OduncVerForm oduncVer = new OduncVerForm();
+            oduncVer.MdiParent = this;
+            oduncVer.Show();
+        }
     }
 }

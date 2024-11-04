@@ -14,6 +14,12 @@ namespace KutuphaneOtomasyonWinForm
     
     public partial class Dokumanlar
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Dokumanlar()
+        {
+            this.Kayitlar = new HashSet<Kayitlar>();
+        }
+    
         public int dokuman_id { get; set; }
         public string dokuman_ad { get; set; }
         public string dokuman_yazar { get; set; }
@@ -21,5 +27,8 @@ namespace KutuphaneOtomasyonWinForm
         public Nullable<int> dokuman_sayfaSayisi { get; set; }
         public Nullable<System.DateTime> dokuman_basimTarihi { get; set; }
         public string dokuman_turu { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Kayitlar> Kayitlar { get; set; }
     }
 }
