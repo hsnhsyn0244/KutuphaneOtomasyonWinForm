@@ -36,6 +36,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.kitapAraText = new System.Windows.Forms.TextBox();
+            this.oduncVerBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -112,12 +113,23 @@
             this.kitapAraText.TabIndex = 7;
             this.kitapAraText.TextChanged += new System.EventHandler(this.kitapAraText_TextChanged);
             // 
+            // oduncVerBtn
+            // 
+            this.oduncVerBtn.Location = new System.Drawing.Point(133, 267);
+            this.oduncVerBtn.Name = "oduncVerBtn";
+            this.oduncVerBtn.Size = new System.Drawing.Size(154, 54);
+            this.oduncVerBtn.TabIndex = 8;
+            this.oduncVerBtn.Text = "Ödünç Ver";
+            this.oduncVerBtn.UseVisualStyleBackColor = true;
+            this.oduncVerBtn.Click += new System.EventHandler(this.oduncVerBtn_Click);
+            // 
             // OduncVerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1323, 620);
+            this.Controls.Add(this.oduncVerBtn);
             this.Controls.Add(this.kitapAraText);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView2);
@@ -146,5 +158,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox kitapAraText;
+        private System.Windows.Forms.Button oduncVerBtn;
     }
 }

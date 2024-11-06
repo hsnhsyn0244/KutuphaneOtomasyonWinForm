@@ -18,11 +18,16 @@ namespace KutuphaneOtomasyonWinForm.Kayıt_İşlemi
         }
         KutuphaneOtomasyonuEntities db= new KutuphaneOtomasyonuEntities();
 
-        private void OduncVerForm_Load(object sender, EventArgs e)
+        public void kayitListeleme()
         {
-            // Kayıt Listeleme işlemi yapıldı
+ // Kayıt Listeleme işlemi yapıldı
             var kayıtList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayıtList;
+        }
+
+        private void OduncVerForm_Load(object sender, EventArgs e)
+        {
+            kayitListeleme();
 
             // Dokuman Listeleme
 
@@ -59,6 +64,28 @@ namespace KutuphaneOtomasyonWinForm.Kayıt_İşlemi
             string aranacakAd = kitapAraText.Text;
             var bulunanDokumanlar = db.Dokumanlar.Where(_aranacakAd => _aranacakAd.dokuman_ad.Contains(aranacakAd)).ToList(); //Contains metodu içeriyor mu demek.
             dataGridView2.DataSource = bulunanDokumanlar;
+        }
+
+        private void oduncVerBtn_Click(object sender, EventArgs e)
+        {
+            //Kişiyi elde Tutma islemi.
+            string secilenKisiTc = arananKullaniciTcText.Text; 
+            var secilenKisi =db.Kullanicilar.Where(_secilenKisi => _secilenKisi.kullanici_tc.Equals(secilenKisiTc)).FirstOrDefault();
+
+            //Kitabı elde tutma islemi
+            int secilenDokumanId = Convert.ToInt16(dataGridView2.CurrentRow.Cells[0].Value);
+            var secilenDokuman = db.Dokumanlar.Where(_secilenDokuman => _secilenDokuman.dokuman_id == secilenDokumanId).FirstOrDefault();
+
+            Kayitlar yeniKayit = new Kayitlar();
+            yeniKayit.dokuman_id = secilenDokuman.dokuman_id;
+            yeniKayit.kullanici_id = secilenKisi.kullanici_id;
+            yeniKayit.alis_tarih = DateTime.Today;
+            yeniKayit.veris_tarih = DateTime.Today.AddDays(30);
+            yeniKayit.durum = false;
+            db.Kayitlar.Add(yeniKayit);
+            db.SaveChanges();
+            kayitListeleme();
+
         }
     }
 }
