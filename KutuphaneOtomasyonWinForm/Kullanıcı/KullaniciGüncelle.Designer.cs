@@ -216,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1057, 600);
+            this.ClientSize = new System.Drawing.Size(1078, 600);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.kullaniciGüncelleBtn);
             this.Controls.Add(this.kullaniciGüncelleCinK);

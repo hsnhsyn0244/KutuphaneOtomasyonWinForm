@@ -30,6 +30,7 @@
         {
             this.kullanibiBilgiTitle = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.oduncVermeBtn = new System.Windows.Forms.Button();
             this.DokumanGuncelleBtn = new System.Windows.Forms.Button();
             this.dokumanEkleBtn = new System.Windows.Forms.Button();
             this.dokumanSilBtn = new System.Windows.Forms.Button();
@@ -41,7 +42,7 @@
             this.kullaniciSilBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.kullaniciListeleBtn = new System.Windows.Forms.Button();
-            this.oduncVermeBtn = new System.Windows.Forms.Button();
+            this.geriAlBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,13 +52,14 @@
             this.kullanibiBilgiTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullanibiBilgiTitle.Location = new System.Drawing.Point(0, 0);
             this.kullanibiBilgiTitle.Name = "kullanibiBilgiTitle";
-            this.kullanibiBilgiTitle.Size = new System.Drawing.Size(1273, 41);
+            this.kullanibiBilgiTitle.Size = new System.Drawing.Size(1314, 41);
             this.kullanibiBilgiTitle.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.geriAlBtn);
             this.panel2.Controls.Add(this.oduncVermeBtn);
             this.panel2.Controls.Add(this.DokumanGuncelleBtn);
             this.panel2.Controls.Add(this.dokumanEkleBtn);
@@ -73,8 +75,22 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(135, 547);
+            this.panel2.Size = new System.Drawing.Size(135, 595);
             this.panel2.TabIndex = 1;
+            // 
+            // oduncVermeBtn
+            // 
+            this.oduncVermeBtn.BackColor = System.Drawing.Color.White;
+            this.oduncVermeBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.oduncVermeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.oduncVermeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oduncVermeBtn.Location = new System.Drawing.Point(0, 548);
+            this.oduncVermeBtn.Name = "oduncVermeBtn";
+            this.oduncVermeBtn.Size = new System.Drawing.Size(135, 47);
+            this.oduncVermeBtn.TabIndex = 19;
+            this.oduncVermeBtn.Text = "Ödünç Verme";
+            this.oduncVermeBtn.UseVisualStyleBackColor = false;
+            this.oduncVermeBtn.Click += new System.EventHandler(this.oduncVermeBtn_Click);
             // 
             // DokumanGuncelleBtn
             // 
@@ -204,25 +220,25 @@
             this.kullaniciListeleBtn.UseVisualStyleBackColor = false;
             this.kullaniciListeleBtn.Click += new System.EventHandler(this.kullaniciListeleBtn_Click);
             // 
-            // oduncVermeBtn
+            // geriAlBtn
             // 
-            this.oduncVermeBtn.BackColor = System.Drawing.Color.White;
-            this.oduncVermeBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.oduncVermeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.oduncVermeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oduncVermeBtn.Location = new System.Drawing.Point(0, 500);
-            this.oduncVermeBtn.Name = "oduncVermeBtn";
-            this.oduncVermeBtn.Size = new System.Drawing.Size(135, 47);
-            this.oduncVermeBtn.TabIndex = 19;
-            this.oduncVermeBtn.Text = "Ödünç Verme";
-            this.oduncVermeBtn.UseVisualStyleBackColor = false;
-            this.oduncVermeBtn.Click += new System.EventHandler(this.oduncVermeBtn_Click);
+            this.geriAlBtn.BackColor = System.Drawing.Color.White;
+            this.geriAlBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.geriAlBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.geriAlBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geriAlBtn.Location = new System.Drawing.Point(0, 501);
+            this.geriAlBtn.Name = "geriAlBtn";
+            this.geriAlBtn.Size = new System.Drawing.Size(135, 47);
+            this.geriAlBtn.TabIndex = 20;
+            this.geriAlBtn.Text = "Geri Al";
+            this.geriAlBtn.UseVisualStyleBackColor = false;
+            this.geriAlBtn.Click += new System.EventHandler(this.geriAlBtn_Click);
             // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 588);
+            this.ClientSize = new System.Drawing.Size(1314, 636);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.kullanibiBilgiTitle);
             this.IsMdiContainer = true;
@@ -251,5 +267,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button kullaniciGüncelleBtn;
         private System.Windows.Forms.Button oduncVermeBtn;
+        private System.Windows.Forms.Button geriAlBtn;
     }
 }

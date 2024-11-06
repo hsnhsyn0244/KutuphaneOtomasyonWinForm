@@ -205,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1168, 598);
+            this.ClientSize = new System.Drawing.Size(1154, 598);
             this.Controls.Add(this.dokumanEkleBasimTarihi);
             this.Controls.Add(this.dokumanEkleSayfaSayısı);
             this.Controls.Add(this.label10);

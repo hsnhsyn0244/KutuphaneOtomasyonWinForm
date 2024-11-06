@@ -97,6 +97,12 @@
     <Compile Include="Kayitlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Kayit\GeriAlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayit\GeriAlForm.Designer.cs">
+      <DependentUpon>GeriAlForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kayit\OduncVerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IslemPaneli.resx">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayit\GeriAlForm.resx">
+      <DependentUpon>GeriAlForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kayit\OduncVerForm.resx">
       <DependentUpon>OduncVerForm.cs</DependentUpon>

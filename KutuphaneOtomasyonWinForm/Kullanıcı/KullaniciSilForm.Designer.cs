@@ -38,15 +38,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 42);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(759, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(912, 270);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // kullaiciSilBtn
             // 
-            this.kullaiciSilBtn.Location = new System.Drawing.Point(604, 318);
+            this.kullaiciSilBtn.Location = new System.Drawing.Point(711, 318);
             this.kullaiciSilBtn.Name = "kullaiciSilBtn";
-            this.kullaiciSilBtn.Size = new System.Drawing.Size(170, 58);
+            this.kullaiciSilBtn.Size = new System.Drawing.Size(216, 58);
             this.kullaiciSilBtn.TabIndex = 1;
             this.kullaiciSilBtn.Text = "Sil";
             this.kullaiciSilBtn.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(788, 412);
+            this.ClientSize = new System.Drawing.Size(967, 412);
             this.Controls.Add(this.kullaiciSilBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "KullaniciSilForm";
