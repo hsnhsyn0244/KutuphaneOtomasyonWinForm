@@ -20,9 +20,14 @@ namespace KutuphaneOtomasyonWinForm.Kayıt_İşlemi
 
         private void OduncVerForm_Load(object sender, EventArgs e)
         {
-            // Listeleme işlemi yapıldı
+            // Kayıt Listeleme işlemi yapıldı
             var kayıtList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayıtList;
+
+            // Dokuman Listeleme
+
+            var dokumanList = db.Dokumanlar.ToList();
+            dataGridView2.DataSource = dokumanList;
             
             // Gözükmesini istemediğimiz columsları gizledik
             dataGridView1.Columns[6].Visible = false;
@@ -46,6 +51,14 @@ namespace KutuphaneOtomasyonWinForm.Kayıt_İşlemi
             {
                 label2.Text = " !!!  BÖYLE BİR KULLANICI BULUNAMADI. ";
             }
+        }
+
+        private void kitapAraText_TextChanged(object sender, EventArgs e)
+        {
+            // Kitap Adına göre filtreleme yaptık.
+            string aranacakAd = kitapAraText.Text;
+            var bulunanDokumanlar = db.Dokumanlar.Where(_aranacakAd => _aranacakAd.dokuman_ad.Contains(aranacakAd)).ToList(); //Contains metodu içeriyor mu demek.
+            dataGridView2.DataSource = bulunanDokumanlar;
         }
     }
 }

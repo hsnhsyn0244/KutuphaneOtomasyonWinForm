@@ -33,15 +33,19 @@
             this.arananKullaniciTcText = new System.Windows.Forms.TextBox();
             this.arananKullaniciTcBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.kitapAraText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 208);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 344);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1299, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(1299, 264);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -49,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(39, 45);
+            this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 18);
             this.label1.TabIndex = 1;
@@ -57,14 +61,14 @@
             // 
             // arananKullaniciTcText
             // 
-            this.arananKullaniciTcText.Location = new System.Drawing.Point(227, 44);
+            this.arananKullaniciTcText.Location = new System.Drawing.Point(198, 16);
             this.arananKullaniciTcText.Name = "arananKullaniciTcText";
             this.arananKullaniciTcText.Size = new System.Drawing.Size(239, 20);
             this.arananKullaniciTcText.TabIndex = 2;
             // 
             // arananKullaniciTcBtn
             // 
-            this.arananKullaniciTcBtn.Location = new System.Drawing.Point(520, 40);
+            this.arananKullaniciTcBtn.Location = new System.Drawing.Point(312, 42);
             this.arananKullaniciTcBtn.Name = "arananKullaniciTcBtn";
             this.arananKullaniciTcBtn.Size = new System.Drawing.Size(125, 23);
             this.arananKullaniciTcBtn.TabIndex = 3;
@@ -76,17 +80,47 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(224, 92);
+            this.label2.Location = new System.Drawing.Point(12, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 4;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(500, 79);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(811, 242);
+            this.dataGridView2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(497, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Kitap Ara :";
+            // 
+            // kitapAraText
+            // 
+            this.kitapAraText.Location = new System.Drawing.Point(605, 16);
+            this.kitapAraText.Name = "kitapAraText";
+            this.kitapAraText.Size = new System.Drawing.Size(268, 20);
+            this.kitapAraText.TabIndex = 7;
+            this.kitapAraText.TextChanged += new System.EventHandler(this.kitapAraText_TextChanged);
             // 
             // OduncVerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1323, 512);
+            this.ClientSize = new System.Drawing.Size(1323, 620);
+            this.Controls.Add(this.kitapAraText);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.arananKullaniciTcBtn);
             this.Controls.Add(this.arananKullaniciTcText);
@@ -96,6 +130,7 @@
             this.Text = "OduncVerForm";
             this.Load += new System.EventHandler(this.OduncVerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +143,8 @@
         private System.Windows.Forms.TextBox arananKullaniciTcText;
         private System.Windows.Forms.Button arananKullaniciTcBtn;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox kitapAraText;
     }
 }
